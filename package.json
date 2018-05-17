@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/proofofexistence/api-client#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
     "standard": "^11.0.1",
     "webpack": "^4.8.3"
   },
