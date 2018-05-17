@@ -4,7 +4,7 @@
   "description": "API Client for Proof of Existence",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard 'lib/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/proofofexistence/api-client/issues"
   },
-  "homepage": "https://github.com/proofofexistence/api-client#readme"
+  "homepage": "https://github.com/proofofexistence/api-client#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
 }
