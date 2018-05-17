@@ -1,5 +1,13 @@
 # Proof of Existence API Client
 
+## Development
+
+```sh
+sudo npm install -g webpack-cli
+npm install
+webpack --mode development
+```
+
 ## Usage
 
 ```js
