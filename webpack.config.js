@@ -33,7 +33,7 @@ module.exports = {
   mode : prod ? "production" : "development",
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "proofxApiClient.min.js"
+    filename: "proofx.min.js"
   },
   module: {
     rules: [
