@@ -3,9 +3,8 @@
 ## Development
 
 ```sh
-sudo npm install -g webpack-cli
 npm install
-webpack --mode development
+npm start
 ```
 
 ## Usage
