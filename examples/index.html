@@ -5,20 +5,36 @@
     <title>Proofx API Client</title>
     <script src="../proofx.min.js" type="text/javascript"></script>
     <script>
+      function getHash() {
+        var hash = document.getElementById('hash').value
+        console.log('hash: ', hash)
 
-      const hash = '15db6dbff590000ea13246e1c166802b690663c4e0635bfca78049d5a8762832'
+        if (hash !== '' && hash.length == 64) {
+          let status = proofx.getStatus(hash)
+            .then(function (response) {
+              console.log(response)
+              console.log(response.data)
 
-      let status = proofx.getStatus(hash)
-        .then(function (response) {
-          console.log(response)
-          console.log(response.data)
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-
+              document.getElementById('answer')
+                .innerHTML = JSON.stringify(response.data)
+            })
+            .catch(function (error) {
+              console.log(error);
+          });
+        }
+      }
     </script>
   </head>
   <body>
+    <h1>Get status based on a hash</h1>
+    <p>Imput a sha256 hash -- ex. <em>15db6dbff590000ea13246e1c166802b690663c4e0635bfca78049d5a8762832</em></p>
+    <form onsubmit="event.preventDefault(); getHash();">
+      <input type="text" id="hash" placeholder="Input a hash here"/>
+      <input type="submit" value="Get Hash Info" />
+    </form>
+    <br />
+    <div id="answer">
+
+    </div>
   </body>
 </html>
