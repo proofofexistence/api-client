@@ -1,10 +1,24 @@
 var proofx = require('../lib')
 
-async function test() {
-  const hash = '15db6dbff590000ea13246e1c166802b690663c4e0635bfca78049d5a8762832'
-  let register = proofx.register(hash)
-  console.log(register.success) // true
+const hash = '15db6dbff590000ea13246e1c166802b690663c4e0635bfca78049d5a8762832'
 
+let register = proofx.register(hash)
+  .then(function (response) {
+    console.log(response.data)
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+let status = proofx.getStatus(hash)
+  .then(function (response) {
+    console.log(response.data)
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+async function test() {
   let status = proofx.getStatus(hash)
   status  = proofx.updateStatus(hash)
   console.log(status.pending) // true
