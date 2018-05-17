@@ -7,6 +7,9 @@ npm install
 npm start
 ```
 
+You can run the examples with `npm start` and browse to http://localhost:8080/examples/
+
+
 ## Build
 
 ```sh
