@@ -4,7 +4,8 @@
   "description": "API Client for Proof of Existence",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "standard 'lib/**/*.js'",
+    "test": "mocha --timeout 10000 test/*.js",
+    "lint": "standard 'lib/**/*.js'",
     "start": "webpack-dev-server",
     "build": "NODE_ENV=production webpack"
   },
@@ -22,6 +23,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
+    "mocha": "^5.1.1",
     "standard": "^11.0.1",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3",
