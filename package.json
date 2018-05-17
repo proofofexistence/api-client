@@ -4,7 +4,9 @@
   "description": "API Client for Proof of Existence",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "standard 'lib/**/*.js'"
+    "test": "standard 'lib/**/*.js'",
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,9 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "standard": "^11.0.1",
-    "webpack": "^4.8.3"
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
     "axios": "^0.18.0"
