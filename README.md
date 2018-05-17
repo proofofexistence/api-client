@@ -7,6 +7,18 @@ npm install
 npm start
 ```
 
+## Build
+
+```sh
+npm run build
+```
+
+## Test
+
+```
+npm test
+```
+
 ## Usage
 
 ```js
