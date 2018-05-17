@@ -23,6 +23,10 @@ async function test() {
   let docproofs = proofx.docproofs(hash)
   console.log(docproofs.items) // []
 
+  // you can override the config (see axios config options)
+  let config = {baseUrl: 'https://proofofexistence.com'}
+  status = proofx.status(hash, config)
+
   return status
 }
 
