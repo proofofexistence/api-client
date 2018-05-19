@@ -32,8 +32,11 @@ module.exports = {
   watch: watch,
   mode : prod ? "production" : "development",
   output: {
+    library: 'proofx',
     path: path.resolve(__dirname, 'dist'),
-    filename: "proofx.min.js"
+    filename: 'proofx.min.js',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
