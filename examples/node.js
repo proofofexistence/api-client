@@ -18,14 +18,8 @@ let status = proofx.getStatus(hash)
     console.log(error);
   });
 
-async function test() {
-  let status = proofx.getStatus(hash)
-  status  = proofx.updateStatus(hash)
-  console.log(status.pending) // true
 
-  let docproofs = proofx.docproofs(hash)
-  console.log(docproofs.items) // []
-
+async function getStatus() {
   // you can override the config (see axios config options)
   let config = {baseUrl: 'https://proofofexistence.com'}
   status = proofx.getStatus(hash, config)
@@ -33,9 +27,22 @@ async function test() {
   return status
 }
 
-test()
+getStatus()
   .then(function (response) {
-    console.log(response)
+    console.log(response.data)
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+async function getDocproofs() {
+  let docproofs = proofx.docproofs(hash)
+  return docproofs
+}
+
+getDocproofs()
+  .then(function (response) {
+    console.log(response.data)
   })
   .catch(function (error) {
     console.log(error);
