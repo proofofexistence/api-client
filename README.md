@@ -6,13 +6,17 @@
 npm i @proofofexistence/api-client
 ```
 
-See the [./examples](examples) folder.
+Import using ES6
+```
+import proofx from "@proofofexistence/api-client"
+```
+
+See the [./examples](examples) folder for more.
 
 ```js
+import { getStatus } from "@proofofexistence/api-client"
 
-const proofx = require("@proofofexistence/api-client")
-
-let status = proofx.getStatus(hash)
+let status = getStatus(hash)
   .then(function (response) {
     console.log(response.data)
   })
