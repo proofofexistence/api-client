@@ -1,27 +1,5 @@
 # Proof of Existence API Client
 
-## Development
-
-```sh
-npm install
-npm start
-```
-
-You can run the examples with `npm start` and browse to http://localhost:8080/examples/
-
-
-## Build
-
-```sh
-npm run build
-```
-
-## Test
-
-```
-npm test
-```
-
 ## Usage
 
 See the [./examples](examples) folder.
@@ -36,4 +14,31 @@ let status = proofx.getStatus(hash)
   });
 ```
 
-## API
+Please refer to the complete [API docs](./docs) for more details. 
+
+## Development
+
+```sh
+npm install
+npm start
+```
+
+You can run the examples with `npm start` and browse to http://localhost:8080/examples/
+
+## Build
+
+```sh
+npm run build
+```
+
+## Test
+
+```
+npm test
+```
+
+## Build the docs
+
+```
+npm run docs
+```

@@ -7,7 +7,8 @@
     "test": "mocha --timeout 10000 test/*.js",
     "lint": "standard 'lib/**/*.js'",
     "start": "webpack-dev-server",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack",
+    "docs": "jsdoc2md lib/index.js > docs/api.md"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
+    "jsdoc-to-markdown": "^4.0.1",
     "mocha": "^5.1.1",
     "standard": "^11.0.1",
     "webpack": "^4.8.3",
