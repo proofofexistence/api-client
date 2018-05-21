@@ -14,7 +14,7 @@ let status = proofx.getStatus(hash)
   });
 ```
 
-Please refer to the complete [API docs](./docs) for more details. 
+Please refer to the complete [API docs](./docs/api.md) for more details. 
 
 ## Development
 
