@@ -1,5 +1,7 @@
 # Proof of Existence API Client
 
+[![npm version](https://badge.fury.io/js/%40proofofexistence%2Fapi-client.svg)](https://badge.fury.io/js/%40proofofexistence%2Fapi-client)
+
 ## Usage
 
 ```
