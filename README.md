@@ -2,9 +2,16 @@
 
 ## Usage
 
+```
+npm i @proofofexistence/api-client
+```
+
 See the [./examples](examples) folder.
 
 ```js
+
+const proofx = require("@proofofexistence/api-client")
+
 let status = proofx.getStatus(hash)
   .then(function (response) {
     console.log(response.data)
@@ -14,7 +21,7 @@ let status = proofx.getStatus(hash)
   });
 ```
 
-Please refer to the complete [API docs](./docs/api.md) for more details. 
+Please refer to the complete [API docs](./docs/api.md) for more details.
 
 ## Development
 
