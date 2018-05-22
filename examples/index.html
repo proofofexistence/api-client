@@ -10,7 +10,7 @@
         console.log('hash: ', hash)
 
         if (hash !== '' && hash.length == 64) {
-          let status = proofx.getStatus(hash)
+          proofx.getStatus(hash)
             .then(function (response) {
               console.log(response)
               console.log(response.data)
