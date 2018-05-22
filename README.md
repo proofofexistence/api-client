@@ -19,10 +19,10 @@ See the [./examples](examples) folder for more.
 import { getStatus } from "@proofofexistence/api-client"
 
 let status = getStatus(hash)
-  .then(function (response) {
+  .then( response => {
     console.log(response.data)
   })
-  .catch(function (error) {
+  .catch( error => {
     console.log(error);
   });
 ```
