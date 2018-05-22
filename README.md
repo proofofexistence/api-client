@@ -19,12 +19,12 @@ See the [./examples](examples) folder for more.
 import { getStatus } from "@proofofexistence/api-client"
 
 let status = getStatus(hash)
-  .then( response => {
+  .then( response => 
     console.log(response.data)
-  })
-  .catch( error => {
+  )
+  .catch( error => 
     console.log(error);
-  });
+  )
 ```
 
 Please refer to the complete [API docs](./docs/api.md) for more details.
